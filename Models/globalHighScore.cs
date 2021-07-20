@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Lottery_system.Models
 {
@@ -29,14 +27,14 @@ namespace Lottery_system.Models
         {
             if (users.Count() > 0)
             {
-                users.RemoveAll(listUser => listUser.userName == user.userName);
+                users.RemoveAll(listUser => listUser.userName == user.userName); // removing the score
                 if (user.userName == highestUser)
                 {
                     if (users.Count() > 0)
                     {
                         if (!isSorted)
                         {
-                            users.OrderBy(userObj => userObj.score);
+                            users.OrderBy(userObj => userObj.score); //sorting the list
                             isSorted = true;
                         }
                         highestUser = users[0].userName;
@@ -50,7 +48,6 @@ namespace Lottery_system.Models
                     }
                 }
             }
-
         }
     }
 }

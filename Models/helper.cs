@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Numerics;
-using System.Threading.Tasks;
 
 namespace Lottery_system.Models
 {
@@ -28,7 +25,6 @@ namespace Lottery_system.Models
             return Int32.Parse(score);
         }
 
-
         public static users getWiner ()
         {
             users winner = new users();
@@ -38,7 +34,6 @@ namespace Lottery_system.Models
 
             return winner;
         }
-
 
         public static string getMagicNumber(int score)
         {

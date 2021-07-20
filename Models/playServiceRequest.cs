@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Lottery_system.Models
+﻿namespace Lottery_system.Models
 {
     public class playServiceRequest
     {
